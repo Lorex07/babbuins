@@ -39,5 +39,23 @@
                     <input type="search" id="search" name="search" class="txt" size="20">
                     <input type="submit" class="btn" value="Search">
             
+                    <!-- HTML code for the search bar -->
+<form>
+    <input type="text" id="search-input" placeholder="Cerca...">
+    <button type="submit" id="search-button">Cerca</button>
+  </form>
+  
+  <!-- JavaScript code to handle the search functionality -->
+  <script>
+    const searchButton = document.getElementById('search-button');
+    const searchInput = document.getElementById('search-input');
+  
+    searchButton.addEventListener('click', function(event) {
+      event.preventDefault(); // prevents the form from submitting
+  
+      // do something with the search input value, for example:
+      console.log(`Searching for: ${searchInput.value}`);
+    });
+  </script>
             </body>
 </html>
